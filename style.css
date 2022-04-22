@@ -1,0 +1,197 @@
+:root {
+    /* primary */
+    --orange: hsl(25, 97%, 53%);
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --lGrey: hsl(217, 12%, 63%);
+    --mGrey: hsl(216, 12%, 54%);
+    --dBlue: hsl(213, 19%, 18%);
+    --vDBlue: hsl(216, 12%, 8%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+/* affects main */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*  */
+    background-color: var(--vDBlue);
+    color: white;
+
+}
+
+main {
+    /* border: 2px solid plum; */
+    width: 95%;
+    max-width: 400px;
+/* affects section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*  */
+    background-color: var(--dBlue);
+    border-radius: 2rem;
+    
+    position: relative;
+  
+}
+
+.container,.thankyou {
+    /* border: 2px solid green; */
+    width: 85%;
+    padding-bottom: 2.5rem;
+}
+
+
+.star-icon {
+
+    border-radius: 50%;
+    width: min(5%, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--vDBlue);
+}
+
+.header {
+    font-size: 2.7rem;
+    margin-bottom: 0;
+}
+
+.intro {
+    font-size: 1.47rem;
+    margin-top: 1rem;
+    color: var(--lGrey)
+}
+
+.intro span {
+    display: block;
+}
+
+/* for clicking on button */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+input[name="radiobtn"] {
+    display: none;
+}
+
+input[name="radiobtn"]+label {
+    /* style passive state as you like */
+    color: var(--lGrey);
+    border-radius: 50%;
+    width: min(5%, 20px);
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    background-color: var(--vDBlue);
+    font-size: 1.5rem;
+}
+
+input[name="radiobtn"]:checked+label {
+    /* style checked state as you like */
+    background-color: var(--orange);
+
+}
+
+input[name="radiobtn"]+label:hover {
+    /* style checked state as you like */
+    cursor: pointer;
+
+}
+
+
+/*  */
+
+.submit-btn {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    background-color: var(--orange);
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--orange)
+}
+
+/* thank you page */
+.thankyou {
+    /* border: 1px solid red; */
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.phone-icon{
+    text-align: center;
+}
+
+
+.selected{
+   display: flex;
+   justify-content: center;
+}
+
+
+.selected p{
+    background-color: var(--vDBlue);
+    text-align: center;
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    padding-top: 0.7rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    color: var(--orange);
+}
+
+.thankyou h1{
+    text-align: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.thankyouNote {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--lGrey);
+}
+.thankyouNote span{
+    display: block;
+}
+
+@media screen and (min-width:400px) {
+    .intro span {
+        display: inline;
+        font-size: 1.58rem;
+    }
+
+    .thankyouNote span{
+        display: inline;
+        font-size: 1.48rem;
+    }
+}
