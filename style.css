@@ -37,13 +37,18 @@ main {
     align-items: center;
     /*  */
     background-color: var(--dBlue);
+
     border-radius: 2rem;
     position: relative;
 }
 
-.container, .thankyou {
+.container {
     width: 85%;
     padding-bottom: 2.5rem;
+}
+
+.container {
+    padding-top: 3rem;
 }
 
 
@@ -92,7 +97,7 @@ input[name="radiobtn"]+label {
     display: flex;
     justify-content: center;
     padding: 1.2rem;
-    background-color: var(--vDBlue);
+    background-color:var(--vDBlue);
     font-size: 1.5rem;
 }
 
@@ -114,7 +119,7 @@ input[name="radiobtn"]+label:hover {
     text-align: center;
     margin-top: 2rem;
     font-size: 2rem;
-    padding: 0.5rem 0;
+    padding:1.2rem 0;;
     background-color: var(--orange);
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
@@ -130,6 +135,7 @@ input[name="radiobtn"]+label:hover {
 
 /* thank you page */
 .thankyou {
+
     background-color: var(--dBlue);
     position: absolute;
     opacity: 0;
@@ -175,10 +181,11 @@ input[name="radiobtn"]+label:hover {
     display: block;
 }
 
-.attribution{
-    margin-top:3rem;
+.attribution {
+    margin-top: 3rem;
     font-size: 1.3rem;
 }
+
 @media screen and (min-width:400px) {
     .intro span {
         display: inline;

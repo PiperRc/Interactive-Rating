@@ -25,7 +25,7 @@ for(i=0;i<radiobtn.length;i++){
         thankyou.style.zIndex=1;
         rating.innerHTML=getValue();
         main.style.paddingTop='2rem';
-        main.style.paddingBottom='7rem';
+        main.style.paddingBottom='0rem';
     } 
 }
 })
