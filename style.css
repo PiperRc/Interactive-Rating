@@ -17,41 +17,37 @@ html {
 
 body {
     height: 100vh;
-/* affects main */
+    /* affects main */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-/*  */
+    /*  */
     background-color: var(--vDBlue);
     color: white;
 
 }
 
 main {
-    /* border: 2px solid plum; */
     width: 95%;
     max-width: 400px;
-/* affects section */
+    /* affects section */
     display: flex;
     flex-direction: column;
     align-items: center;
-/*  */
+    /*  */
     background-color: var(--dBlue);
     border-radius: 2rem;
-    
     position: relative;
-  
 }
 
-.container,.thankyou {
-    /* border: 2px solid green; */
+.container, .thankyou {
     width: 85%;
     padding-bottom: 2.5rem;
 }
 
 
 .star-icon {
-
     border-radius: 50%;
     width: min(5%, 20px);
     display: flex;
@@ -77,7 +73,7 @@ main {
     display: block;
 }
 
-/* for clicking on button */
+/* radio buttons*/
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -109,12 +105,9 @@ input[name="radiobtn"]:checked+label {
 input[name="radiobtn"]+label:hover {
     /* style checked state as you like */
     cursor: pointer;
-
 }
 
-
 /*  */
-
 .submit-btn {
     width: 100%;
     color: white;
@@ -137,25 +130,22 @@ input[name="radiobtn"]+label:hover {
 
 /* thank you page */
 .thankyou {
-    /* border: 1px solid red; */
+    background-color: var(--dBlue);
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
 
-
-.phone-icon{
+.phone-icon {
     text-align: center;
 }
 
-
-.selected{
-   display: flex;
-   justify-content: center;
+.selected {
+    display: flex;
+    justify-content: center;
 }
 
-
-.selected p{
+.selected p {
     background-color: var(--vDBlue);
     text-align: center;
     width: 60%;
@@ -169,7 +159,7 @@ input[name="radiobtn"]+label:hover {
     color: var(--orange);
 }
 
-.thankyou h1{
+.thankyou h1 {
     text-align: center;
     text-align: center;
     font-size: 2.5rem;
@@ -180,17 +170,22 @@ input[name="radiobtn"]+label:hover {
     font-size: 1.5rem;
     color: var(--lGrey);
 }
-.thankyouNote span{
+
+.thankyouNote span {
     display: block;
 }
 
+.attribution{
+    margin-top:3rem;
+    font-size: 1.3rem;
+}
 @media screen and (min-width:400px) {
     .intro span {
         display: inline;
         font-size: 1.58rem;
     }
 
-    .thankyouNote span{
+    .thankyouNote span {
         display: inline;
         font-size: 1.48rem;
     }
